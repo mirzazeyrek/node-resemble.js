@@ -1,4 +1,4 @@
-node-resebmle.js
+node-resebmle.js with jpeg support
 ================
 
 Analyse and compare images with Javascript. This project does not need canvas or any other binary denpendencies.
