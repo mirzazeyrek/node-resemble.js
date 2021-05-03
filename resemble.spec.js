@@ -3,6 +3,10 @@
 describe('node-resemble.js', function() {
   var EXAMPLE_LARGE_IMAGE = 'example/LargeImage.png';
   var EXAMPLE_SMALL_IMAGE = 'example/SmallImage.png';
+  var EXAMPLE_PEOPLE_IMAGES = [
+	  'example/People.png',
+	  'example/People2.png'
+  ];
   var OPTIMISATION_SKIP_STEP = 6;
   var DEFAULT_LARGE_IMAGE_THRESHOLD = 1200;
 
@@ -160,6 +164,17 @@ describe('node-resemble.js', function() {
       expect(getPixelForLocation(image, step, 1).alpha).not.toBe(0);
       expect(getPixelForLocation(image, step, step).alpha).not.toBe(0);
     }
+  });
+
+  it('rawMisMatchPercentage contains raw result', function(done) {
+	  resemble(
+	  	EXAMPLE_PEOPLE_IMAGES[0]
+	  ).compareTo(
+	  	EXAMPLE_PEOPLE_IMAGES[1]
+	  ).onComplete(function(data) {
+		  expect(data.rawMisMatchPercentage).toBe(8.6612);
+		  done();
+	  });
   });
 
   function getLargeImageComparison() {

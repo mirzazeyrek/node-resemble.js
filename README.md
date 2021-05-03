@@ -1,7 +1,6 @@
-node-resebmle.js with jpeg support
-================
+node-resemble.js
 
-Analyse and compare images with Javascript. This project does not need canvas or any other binary denpendencies.
+Analyse and compare images with Javascript. This project does not need canvas or any other binary dependencies.
 It is a modification of [Resemble.js](https://github.com/Huddle/Resemble.js)
 
 
@@ -91,5 +90,7 @@ resemble.outputSettings({
 --------------------------------------
 
 Credits:
- * Created by [James Cryer](http://github.com/jamescryer) and the Huddle development team.
- * [Lukas Svoboda](http://github.com/lksv) - modification for node.js
+ * Created by [James Cryer](https://github.com/jamescryer) and the Huddle development team.
+ * [Lukas Svoboda](https://github.com/lksv) - modification for node.js
+ * [Mirza Zeyrek](https://github.com/mirzazeyrek) - jpeg support
+ * [LarryG](https://github.com/larryg01) - dependency updates

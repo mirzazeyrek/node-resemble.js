@@ -1,9 +1,9 @@
-var gulp = require('gulp');
-var jasmine = require('gulp-jasmine');
-var gutil = require('gulp-util');
+const gulp = require('gulp');
+const jasmine = require('gulp-jasmine');
+const gutil = require('gulp-util');
 
-var srcFiles = 'resemble.js';
-var specFiles = 'resemble.spec.js';
+const srcFiles = 'resemble.js';
+const specFiles = 'resemble.spec.js';
 
 function runTests(breakOnError) {
   return gulp.src(specFiles)
